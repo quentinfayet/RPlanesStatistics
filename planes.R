@@ -44,13 +44,11 @@ print(head(planes));
 
 # ========== Printing graph: How many flight / months
 # Graph
-graph.howManyPlanes = ggplot(planes, aes=(x=YearMonth)) + geom_histogram();
+graph.howManyPlanes <- ggplot(planes, aes(x = YearMonth)) +
+                       geom_histogram();
 
 # Saving graph
-#ggsave(plot=graph.howManyPlanes,
-#       fileName = "flightsPerMonth.png",
-#       height = 6,
-#       width = 8);
+ggsave(plot=graph.howManyPlanes, filename="flightsPerMonth.png", height=8, width=6)
 
 # Printing graph
 print(graph.howManyPlanes);
