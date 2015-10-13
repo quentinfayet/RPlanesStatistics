@@ -11,3 +11,9 @@
 # produced vignettes
 vignettes/*.html
 vignettes/*.pdf
+
+#IDE
+.idea
+
+#Too large dataset
+2006.csv
